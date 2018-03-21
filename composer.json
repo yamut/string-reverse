@@ -1,0 +1,20 @@
+{
+	"name": "dmattern/string_reverse",
+	"description": "Reverse a string",
+	"minimum-stability": "dev",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Dan Mattern",
+			"email": "dan@danmattern.com"
+		}
+	],
+	"require": {
+		"phpunit/phpunit": "7.0.2"
+	},
+	"autoload": {
+		"psr-4":{
+			"Interview\\Solutions\\Strings\\Reverse\\": "src/"
+		}
+	}
+}
