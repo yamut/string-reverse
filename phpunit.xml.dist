@@ -9,6 +9,7 @@
             <file>./tests/AlgorithmFactoryTest.php</file>
             <file>./tests/AlgorithmsDoesNothingTest.php</file>
             <file>./tests/AlgorithmTypeTest.php</file>
+            <file>./tests/InvalidAlgorithmExceptionTest.php</file>
         </testsuite>
     </testsuites>
     <logging>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1521760825">
-  <project timestamp="1521760825">
+<coverage generated="1521761192">
+  <project timestamp="1521761192">
     <package name="Interview\Solutions\Strings\Reverse\Algorithms">
       <file name="/home/dan/reverse/src/Algorithms/Algorithm.php">
         <class name="Interview\Solutions\Strings\Reverse\Algorithms\Algorithm" namespace="Interview\Solutions\Strings\Reverse\Algorithms">
@@ -48,14 +48,14 @@
     <package name="Interview\Solutions\Strings\Reverse\Exceptions">
       <file name="/home/dan/reverse/src/Exceptions/InvalidAlgorithmException.php">
         <class name="Interview\Solutions\Strings\Reverse\Exceptions\InvalidAlgorithmException" namespace="Interview\Solutions\Strings\Reverse\Exceptions">
-          <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="5" coveredelements="3"/>
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
         </class>
-        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="10" type="stmt" count="1"/>
-        <line num="11" type="stmt" count="1"/>
-        <line num="13" type="method" name="__toString" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="14" type="stmt" count="0"/>
-        <metrics loc="15" ncloc="15" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="5" coveredelements="3"/>
+        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="10" type="stmt" count="2"/>
+        <line num="11" type="stmt" count="2"/>
+        <line num="13" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <metrics loc="15" ncloc="15" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
       </file>
     </package>
     <package name="Interview\Solutions\Strings\Reverse\Factories">
@@ -226,6 +226,6 @@
         <metrics loc="56" ncloc="32" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="11" coveredelements="11"/>
       </file>
     </package>
-    <metrics files="22" loc="761" ncloc="458" classes="12" methods="34" coveredmethods="33" conditionals="0" coveredconditionals="0" statements="70" coveredstatements="69" elements="104" coveredelements="102"/>
+    <metrics files="22" loc="761" ncloc="458" classes="12" methods="34" coveredmethods="34" conditionals="0" coveredconditionals="0" statements="70" coveredstatements="70" elements="104" coveredelements="104"/>
   </project>
 </coverage>
