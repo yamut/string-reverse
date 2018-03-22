@@ -10,6 +10,8 @@ namespace Interview\Solutions\Strings\Reverse;
  */
 class Constants {
 
-	const ALGORITHM = "ReverseAlgorithm";
-	const REVERSE_ALGORITHM = "ReverseAlgorithm";
+	const DEFAULT_ALGORITHM = "ReverseAlgorithm";
+	const SUPPORTED_ALGORITHMS = [
+		"ReverseAlgorithm",
+	];
 }

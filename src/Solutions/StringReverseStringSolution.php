@@ -2,10 +2,11 @@
 
 namespace Interview\Solutions\Strings\Reverse\Solutions;
 
-use Interview\Solutions\Strings\Reverse\Algorithms\ReverseAlgorithm;
 use Interview\Solutions\Strings\Reverse\Constants;
+use Interview\Solutions\Strings\Reverse\Factories\AlgorithmFactory;
 use Interview\Solutions\Strings\Reverse\Interfaces\Solutions\StringReverseStringSolutionInterface;
 use Interview\Solutions\Strings\Reverse\Returners\StringReturner;
+use Interview\Solutions\Strings\Reverse\Types\AlgorithmType;
 use Interview\Solutions\Strings\Reverse\Types\ArrayType;
 use Interview\Solutions\Strings\Reverse\Types\StringType;
 
@@ -16,38 +17,26 @@ use Interview\Solutions\Strings\Reverse\Types\StringType;
 class StringReverseStringSolution implements StringReverseStringSolutionInterface {
 
 	/**
-	 * @var string
+	 * @var AlgorithmFactory
 	 */
 	private $algorithm;
 
 	/**
 	 * @param StringType $input
-	 * @return StringReturner
+	 * @param null $algorithm
+	 * @return StringReturner|null
+	 * @throws \Interview\Solutions\Strings\Reverse\Exceptions\InvalidAlgorithmException
 	 */
-	public function runReverseStringSolution( StringType $input ): ?StringReturner {
-		$this->checkSupportedAlgorithms();
-		if ( method_exists( $this, $this->algorithm ) ) {
-			return StringReturner::getInstance()->setValue( $this->{$this->algorithm}( $input ) );
-		}
-	}
+	public function runReverseStringSolution( StringType $input, $algorithm = null
+	): ?StringReturner {
 
-	/**
-	 * @return void
-	 */
-	public function checkSupportedAlgorithms(): void {
-		$this->algorithm = Constants::ALGORITHM;
-	}
+		$this->algorithm =
+			AlgorithmFactory::getInstance()->setAlgorithm( AlgorithmType::getInstance()
+				->setAlgorithm( StringType::getInstance()->setValue( $algorithm === null
+					? Constants::DEFAULT_ALGORITHM : $algorithm ) ) );
 
-	/**
-	 * @param StringType $string
-	 * @return StringType
-	 */
-	protected function ReverseAlgorithm( StringType $string ): StringType {
-		return ArrayType::getInstance()
-			->setValue( ReverseAlgorithm::process( StringType::getInstance()
-				->setValue( $string->getValue() )
-				->toArrayType()
-				->getValue() ) )
-			->toStringType();
+		return StringReturner::getInstance()->setValue( ArrayType::getInstance()
+			->setValue( $this->algorithm->runProcess( $input ) )
+			->toStringType() );
 	}
 }

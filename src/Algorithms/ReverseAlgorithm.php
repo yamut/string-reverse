@@ -2,16 +2,16 @@
 
 namespace Interview\Solutions\Strings\Reverse\Algorithms;
 
-use Interview\Solutions\Strings\Reverse\Interfaces\Algorithms\AlgorithmInterface;
 use UnexpectedValueException;
 
 /**
  * Class ReverseAlgorithm
  * @package Interview\Solutions\Strings\Reverse\Algorithms
  */
-class ReverseAlgorithm implements AlgorithmInterface {
+class ReverseAlgorithm extends Algorithm {
+
 	/**
-	 * @param array $input
+	 * @param $input
 	 * @return array
 	 */
 	public static function process( $input ): array {
