@@ -1,6 +1,7 @@
 <?php
 
 use Interview\Solutions\Strings\Reverse\Parameters\StringFactoryStringParameter;
+use Interview\Solutions\Strings\Reverse\Types\StringType;
 use PHPUnit\Framework\TestCase;
 
 class StringFactoryStringParameterTest extends TestCase {
@@ -9,15 +10,15 @@ class StringFactoryStringParameterTest extends TestCase {
 			StringFactoryStringParameter::getInstance() );
 	}
 
-	public function setValueTest(): void {
+	public function testSetValue(): void {
 		$value = "foo";
 		$stringFactoryStringParameter = StringFactoryStringParameter::getInstance();
 		$stringFactoryStringParameter->setValue( \Interview\Solutions\Strings\Reverse\Types\StringType::getInstance()
 			->setValue( $value ) );
-		$this->assertInstanceOf( "StringType", $stringFactoryStringParameter->getValue() );
+		$this->assertInstanceOf( StringType::class, $stringFactoryStringParameter->getValue() );
 	}
 
-	public function getValueTest(): void {
+	public function testGetValue(): void {
 		$value = "foo";
 		$stringFactoryStringParameter = StringFactoryStringParameter::getInstance();
 		$stringFactoryStringParameter->setValue( \Interview\Solutions\Strings\Reverse\Types\StringType::getInstance()
