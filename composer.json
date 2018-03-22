@@ -16,5 +16,10 @@
 		"psr-4":{
 			"Interview\\Solutions\\Strings\\Reverse\\": "src/"
 		}
+	},
+	"config": {
+		"platform": {
+			"php": "7.2.0"
+		}
 	}
 }
