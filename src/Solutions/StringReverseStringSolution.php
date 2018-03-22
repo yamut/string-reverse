@@ -24,13 +24,10 @@ class StringReverseStringSolution implements StringReverseStringSolutionInterfac
 	 * @param StringType $input
 	 * @return StringReturner
 	 */
-	public function runReverseStringSolution( StringType $input ): StringReturner {
+	public function runReverseStringSolution( StringType $input ): ?StringReturner {
 		$this->checkSupportedAlgorithms();
 		if ( method_exists( $this, $this->algorithm ) ) {
 			return StringReturner::getInstance()->setValue( $this->{$this->algorithm}( $input ) );
-		} else {
-			return StringReturner::getInstance()->setValue( StringType::getInstance()
-				->setValue( '' ) );
 		}
 	}
 

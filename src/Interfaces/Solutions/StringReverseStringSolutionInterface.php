@@ -20,6 +20,6 @@ interface StringReverseStringSolutionInterface {
 	 * @param StringType $input
 	 * @return StringReturner
 	 */
-	public function runReverseStringSolution( StringType $input ): StringReturner;
+	public function runReverseStringSolution( StringType $input ): ?StringReturner;
 
 }
