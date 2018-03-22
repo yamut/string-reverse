@@ -4,6 +4,7 @@
     <testsuites>
         <testsuite name="Reverse">
             <file>./tests/ReverseTest.php</file>
+            <file>./tests/StringFactoryStringParameterTest.php</file>
         </testsuite>
     </testsuites>
     <logging>

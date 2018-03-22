@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1521685220">
-  <project timestamp="1521685220">
+<coverage generated="1521686035">
+  <project timestamp="1521686035">
     <package name="Interview\Solutions\Strings\Reverse\Algorithms">
       <file name="/home/dan/reverse/src/Algorithms/ReverseAlgorithm.php">
         <class name="Interview\Solutions\Strings\Reverse\Algorithms\ReverseAlgorithm" namespace="Interview\Solutions\Strings\Reverse\Algorithms" fullPackage="Interview" package="Interview">
@@ -81,16 +81,16 @@
     <package name="Interview\Solutions\Strings\Reverse\Parameters">
       <file name="/home/dan/reverse/src/Parameters/StringFactoryStringParameter.php">
         <class name="Interview\Solutions\Strings\Reverse\Parameters\StringFactoryStringParameter" namespace="Interview\Solutions\Strings\Reverse\Parameters" fullPackage="Interview" package="Interview">
-          <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="7" coveredelements="0"/>
+          <metrics complexity="3" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="1" elements="7" coveredelements="2"/>
         </class>
-        <line num="21" type="method" name="getInstance" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="22" type="stmt" count="0"/>
+        <line num="21" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="22" type="stmt" count="1"/>
         <line num="28" type="method" name="getValue" visibility="public" complexity="1" crap="2.00" count="0"/>
         <line num="29" type="stmt" count="0"/>
         <line num="36" type="method" name="setValue" visibility="public" complexity="1" crap="2.00" count="0"/>
         <line num="37" type="stmt" count="0"/>
         <line num="39" type="stmt" count="0"/>
-        <metrics loc="41" ncloc="24" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="7" coveredelements="0"/>
+        <metrics loc="41" ncloc="24" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="1" elements="7" coveredelements="2"/>
       </file>
     </package>
     <package name="Interview\Solutions\Strings\Reverse\Returners">
@@ -174,6 +174,6 @@
         <metrics loc="56" ncloc="32" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="11" coveredelements="11"/>
       </file>
     </package>
-    <metrics files="16" loc="573" ncloc="338" classes="8" methods="25" coveredmethods="19" conditionals="0" coveredconditionals="0" statements="59" coveredstatements="51" elements="84" coveredelements="70"/>
+    <metrics files="16" loc="573" ncloc="338" classes="8" methods="25" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="59" coveredstatements="52" elements="84" coveredelements="72"/>
   </project>
 </coverage>
