@@ -2,6 +2,9 @@
 
 This is an enterprise grade package for reversing strings.
 
+[![Build Status](https://travis-ci.org/yamut/string-reverse.svg?branch=master)](https://travis-ci.org/yamut/string-reverse)
+
+
 
 ### Usage
 
