@@ -6,6 +6,8 @@
             <file>./tests/ReverseTest.php</file>
             <file>./tests/StringFactoryStringParameterTest.php</file>
             <file>./tests/ArrayTypeTest.php</file>
+            <file>./tests/AlgorithmFactoryTest.php</file>
+            <file>./tests/AlgorithmsDoesNothingTest.php</file>
         </testsuite>
     </testsuites>
     <logging>
