@@ -5,4 +5,6 @@ php:
 install:
  - composer require phpunit/phpunit
 script:
- - vendor/bin/phpunit --bootstrap vendor/autoload.php tests/
+ - vendor/bin/phpunit --coverage-clover=coverage.xml --bootstrap vendor/autoload.php tests/
+after_success:
+ - bash <(curl -s https://codecov.io/bash) -t -t 9348674b-ac35-43f7-a3ce-d556203758ee
