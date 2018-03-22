@@ -5,6 +5,9 @@ use PHPUnit\Framework\TestCase;
 
 final class ReverseTest extends TestCase {
 
+	/**
+	 * @throws \Interview\Solutions\Strings\Reverse\Exceptions\InvalidAlgorithmException
+	 */
 	public function testDoesStringReverse(): void {
 		$chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 		$chars_array = str_split( $chars );

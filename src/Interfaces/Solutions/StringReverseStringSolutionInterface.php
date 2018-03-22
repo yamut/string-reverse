@@ -12,11 +12,6 @@ use Interview\Solutions\Strings\Reverse\Types\StringType;
 interface StringReverseStringSolutionInterface {
 
 	/**
-	 * @return void
-	 */
-	public function checkSupportedAlgorithms(): void;
-
-	/**
 	 * @param StringType $input
 	 * @return StringReturner
 	 */
