@@ -1,6 +1,6 @@
 # String Reverse
 
-This is an enterprise grade package for reversing strings.
+This is an enterprise grade package for reversing strings. Enterprise software is built to allow for easier feature integration and for more efficient troubleshooting.
 
 [![Build Status](https://travis-ci.org/yamut/string-reverse.svg?branch=master)](https://travis-ci.org/yamut/string-reverse)
 [![codecov](https://codecov.io/gh/yamut/string-reverse/branch/master/graph/badge.svg)](https://codecov.io/gh/yamut/string-reverse)
