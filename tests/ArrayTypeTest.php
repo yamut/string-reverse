@@ -9,4 +9,10 @@ class ArrayTypeTest extends TestCase {
 		ArrayType::getInstance()->setValue( '' )->toStringType();
 	}
 
+	public function testArrayArrayToString(): void {
+		$stringType =
+			ArrayType::getInstance()->setValue( [ 'foo', [ 'bar', 'baz' ] ] )->toStringType();
+		$this->assertEquals( 'foobarbaz', $stringType->getValue() );
+	}
+
 }
