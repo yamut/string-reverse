@@ -8,6 +8,7 @@
             <file>./tests/ArrayTypeTest.php</file>
             <file>./tests/AlgorithmFactoryTest.php</file>
             <file>./tests/AlgorithmsDoesNothingTest.php</file>
+            <file>./tests/AlgorithmTypeTest.php</file>
         </testsuite>
     </testsuites>
     <logging>
