@@ -15,4 +15,9 @@ final class ReverseTest extends TestCase {
 		}
 		$this->assertEquals( strrev( $string ), Reverse::reverseString( $string ) );
 	}
+
+	public function testBadInputProcess(): void {
+		$this->expectException( UnexpectedValueException::class );
+		\Interview\Solutions\Strings\Reverse\Algorithms\ReverseAlgorithm::process( 'foo' );
+	}
 }
