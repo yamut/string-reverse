@@ -7,18 +7,15 @@ This is an enterprise grade package for reversing strings.
 
 
 
+### Installation
+`composer require dmattern/string_reverse`
+
 ### Usage
 
 #### Code
-Reverse::reverseString( 'string' );
+`Reverse::reverseString( 'string' );`
 #### Output
-'gnirts'
-
-
- #
- #
- #
-
+`gnirts`
 
 
 

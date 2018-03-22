@@ -2,7 +2,7 @@
 	"name": "dmattern/string_reverse",
 	"description": "Reverse a string",
 	"minimum-stability": "dev",
-	"license": "proprietary",
+	"license": "GPL-3.0-or-later",
 	"authors": [
 		{
 			"name": "Dan Mattern",
