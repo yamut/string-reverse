@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1521843888">
-  <project timestamp="1521843888">
+<coverage generated="1521761192">
+  <project timestamp="1521761192">
     <package name="Interview\Solutions\Strings\Reverse\Algorithms">
       <file name="/home/dan/reverse/src/Algorithms/Algorithm.php">
         <class name="Interview\Solutions\Strings\Reverse\Algorithms\Algorithm" namespace="Interview\Solutions\Strings\Reverse\Algorithms">
@@ -12,18 +12,18 @@
       </file>
       <file name="/home/dan/reverse/src/Algorithms/ReverseAlgorithm.php">
         <class name="Interview\Solutions\Strings\Reverse\Algorithms\ReverseAlgorithm" namespace="Interview\Solutions\Strings\Reverse\Algorithms" fullPackage="Interview" package="Interview">
-          <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="2" elements="9" coveredelements="2"/>
+          <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
         </class>
-        <line num="17" type="method" name="process" visibility="public" complexity="2" crap="2.15" count="1"/>
-        <line num="18" type="stmt" count="1"/>
+        <line num="17" type="method" name="process" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="18" type="stmt" count="2"/>
         <line num="19" type="stmt" count="1"/>
-        <line num="22" type="stmt" count="0"/>
-        <line num="29" type="method" name="_process" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="0"/>
-        <line num="32" type="stmt" count="0"/>
-        <line num="35" type="stmt" count="0"/>
-        <metrics loc="36" ncloc="24" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="2" elements="9" coveredelements="2"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="29" type="method" name="_process" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <metrics loc="36" ncloc="24" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
       </file>
     </package>
     <package name="Interview\Solutions\Strings\Reverse">
@@ -35,14 +35,14 @@
       </file>
       <file name="/home/dan/reverse/src/Reverse.php">
         <class name="Interview\Solutions\Strings\Reverse\Reverse" namespace="Interview\Solutions\Strings\Reverse" fullPackage="Interview" package="Interview">
-          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="5" coveredelements="0"/>
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
         </class>
-        <line num="19" type="method" name="reverseString" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="20" type="stmt" count="0"/>
-        <line num="22" type="stmt" count="0"/>
-        <line num="23" type="stmt" count="0"/>
-        <line num="24" type="stmt" count="0"/>
-        <metrics loc="25" ncloc="16" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="5" coveredelements="0"/>
+        <line num="19" type="method" name="reverseString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <metrics loc="25" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
       </file>
     </package>
     <package name="Interview\Solutions\Strings\Reverse\Exceptions">
@@ -61,37 +61,37 @@
     <package name="Interview\Solutions\Strings\Reverse\Factories">
       <file name="/home/dan/reverse/src/Factories/AlgorithmFactory.php">
         <class name="Interview\Solutions\Strings\Reverse\Factories\AlgorithmFactory" namespace="Interview\Solutions\Strings\Reverse\Factories">
-          <metrics complexity="5" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="6" elements="15" coveredelements="8"/>
+          <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
         </class>
-        <line num="21" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="22" type="stmt" count="2"/>
-        <line num="30" type="method" name="setAlgorithm" visibility="public" complexity="2" crap="2" count="1"/>
-        <line num="31" type="stmt" count="1"/>
+        <line num="21" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="22" type="stmt" count="3"/>
+        <line num="30" type="method" name="setAlgorithm" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="31" type="stmt" count="2"/>
         <line num="33" type="stmt" count="1"/>
         <line num="34" type="stmt" count="1"/>
-        <line num="36" type="stmt" count="1"/>
-        <line num="38" type="stmt" count="1"/>
-        <line num="45" type="method" name="getAlgorithm" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="46" type="stmt" count="0"/>
-        <line num="54" type="method" name="runProcess" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="55" type="stmt" count="0"/>
-        <line num="57" type="stmt" count="0"/>
-        <line num="58" type="stmt" count="0"/>
-        <line num="59" type="stmt" count="0"/>
-        <metrics loc="61" ncloc="41" classes="1" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="6" elements="15" coveredelements="8"/>
+        <line num="36" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="45" type="method" name="getAlgorithm" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="54" type="method" name="runProcess" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <line num="58" type="stmt" count="1"/>
+        <line num="59" type="stmt" count="1"/>
+        <metrics loc="61" ncloc="41" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
       </file>
       <file name="/home/dan/reverse/src/Factories/StringFactory.php">
         <class name="Interview\Solutions\Strings\Reverse\Factories\StringFactory" namespace="Interview\Solutions\Strings\Reverse\Factories" fullPackage="Interview" package="Interview">
-          <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="7" coveredelements="0"/>
+          <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
         </class>
-        <line num="21" type="method" name="getInstance" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="22" type="stmt" count="0"/>
-        <line num="28" type="method" name="getString" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="36" type="method" name="setString" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="37" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <metrics loc="41" ncloc="24" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="7" coveredelements="0"/>
+        <line num="21" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="28" type="method" name="getString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="36" type="method" name="setString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <metrics loc="41" ncloc="24" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
       </file>
     </package>
     <file name="/home/dan/reverse/src/Interfaces/Algorithms/AlgorithmInterface.php">
@@ -139,32 +139,32 @@
     <package name="Interview\Solutions\Strings\Reverse\Returners">
       <file name="/home/dan/reverse/src/Returners/StringReturner.php">
         <class name="Interview\Solutions\Strings\Reverse\Returners\StringReturner" namespace="Interview\Solutions\Strings\Reverse\Returners" fullPackage="Interview" package="Interview">
-          <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="7" coveredelements="0"/>
+          <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
         </class>
-        <line num="21" type="method" name="getInstance" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="22" type="stmt" count="0"/>
-        <line num="29" type="method" name="setValue" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="32" type="stmt" count="0"/>
-        <line num="38" type="method" name="getValue" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <metrics loc="41" ncloc="24" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="7" coveredelements="0"/>
+        <line num="21" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="29" type="method" name="setValue" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="38" type="method" name="getValue" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <metrics loc="41" ncloc="24" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
       </file>
     </package>
     <package name="Interview\Solutions\Strings\Reverse\Solutions">
       <file name="/home/dan/reverse/src/Solutions/StringReverseStringSolution.php">
         <class name="Interview\Solutions\Strings\Reverse\Solutions\StringReverseStringSolution" namespace="Interview\Solutions\Strings\Reverse\Solutions" fullPackage="Interview" package="Interview">
-          <metrics complexity="3" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
+          <metrics complexity="3" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="8" coveredelements="8"/>
         </class>
-        <line num="30" type="method" name="runReverseStringSolution" visibility="public" complexity="3" crap="12.00" count="0"/>
-        <line num="33" type="stmt" count="0"/>
-        <line num="34" type="stmt" count="0"/>
-        <line num="35" type="stmt" count="0"/>
-        <line num="36" type="stmt" count="0"/>
-        <line num="38" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="40" type="stmt" count="0"/>
-        <metrics loc="41" ncloc="28" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="8" coveredelements="0"/>
+        <line num="30" type="method" name="runReverseStringSolution" visibility="public" complexity="3" crap="3" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <metrics loc="41" ncloc="28" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="8" coveredelements="8"/>
       </file>
     </package>
     <package name="Interview\Solutions\Strings\Reverse\Types">
@@ -172,60 +172,60 @@
         <class name="Interview\Solutions\Strings\Reverse\Types\AlgorithmType" namespace="Interview\Solutions\Strings\Reverse\Types">
           <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
         </class>
-        <line num="21" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="22" type="stmt" count="2"/>
-        <line num="30" type="method" name="setAlgorithm" visibility="public" complexity="2" crap="2" count="2"/>
-        <line num="31" type="stmt" count="2"/>
+        <line num="21" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="22" type="stmt" count="3"/>
+        <line num="30" type="method" name="setAlgorithm" visibility="public" complexity="2" crap="2" count="3"/>
+        <line num="31" type="stmt" count="3"/>
         <line num="32" type="stmt" count="1"/>
-        <line num="34" type="stmt" count="1"/>
-        <line num="37" type="stmt" count="1"/>
-        <line num="43" type="method" name="getAlgorithmName" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="44" type="stmt" count="1"/>
-        <line num="51" type="method" name="isValidAlgorithm" visibility="private" complexity="1" crap="1" count="2"/>
-        <line num="52" type="stmt" count="2"/>
+        <line num="34" type="stmt" count="2"/>
+        <line num="37" type="stmt" count="2"/>
+        <line num="43" type="method" name="getAlgorithmName" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="44" type="stmt" count="2"/>
+        <line num="51" type="method" name="isValidAlgorithm" visibility="private" complexity="1" crap="1" count="3"/>
+        <line num="52" type="stmt" count="3"/>
         <metrics loc="55" ncloc="37" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
       </file>
       <file name="/home/dan/reverse/src/Types/ArrayType.php">
         <class name="Interview\Solutions\Strings\Reverse\Types\ArrayType" namespace="Interview\Solutions\Strings\Reverse\Types" fullPackage="Interview" package="Interview">
           <metrics complexity="9" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="17" coveredelements="17"/>
         </class>
-        <line num="20" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="21" type="stmt" count="2"/>
-        <line num="28" type="method" name="setValue" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="29" type="stmt" count="1"/>
-        <line num="31" type="stmt" count="1"/>
-        <line num="37" type="method" name="toStringType" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="38" type="stmt" count="1"/>
-        <line num="45" type="method" name="_toStringType" visibility="private" complexity="5" crap="5" count="1"/>
-        <line num="46" type="stmt" count="1"/>
-        <line num="47" type="stmt" count="1"/>
-        <line num="48" type="stmt" count="1"/>
-        <line num="49" type="stmt" count="1"/>
+        <line num="20" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="21" type="stmt" count="3"/>
+        <line num="28" type="method" name="setValue" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <line num="37" type="method" name="toStringType" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="45" type="method" name="_toStringType" visibility="private" complexity="5" crap="5" count="2"/>
+        <line num="46" type="stmt" count="2"/>
+        <line num="47" type="stmt" count="2"/>
+        <line num="48" type="stmt" count="2"/>
+        <line num="49" type="stmt" count="2"/>
         <line num="50" type="stmt" count="1"/>
-        <line num="52" type="stmt" count="1"/>
-        <line num="57" type="stmt" count="1"/>
-        <line num="63" type="method" name="getValue" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="64" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="57" type="stmt" count="2"/>
+        <line num="63" type="method" name="getValue" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="64" type="stmt" count="2"/>
         <metrics loc="66" ncloc="42" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="17" coveredelements="17"/>
       </file>
       <file name="/home/dan/reverse/src/Types/StringType.php">
         <class name="Interview\Solutions\Strings\Reverse\Types\StringType" namespace="Interview\Solutions\Strings\Reverse\Types" fullPackage="Interview" package="Interview">
-          <metrics complexity="5" methods="5" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="4" elements="11" coveredelements="7"/>
+          <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="11" coveredelements="11"/>
         </class>
-        <line num="20" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="5"/>
-        <line num="21" type="stmt" count="5"/>
-        <line num="28" type="method" name="setValue" visibility="public" complexity="1" crap="1" count="5"/>
-        <line num="29" type="stmt" count="5"/>
-        <line num="31" type="stmt" count="5"/>
-        <line num="37" type="method" name="toArrayType" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="38" type="stmt" count="0"/>
-        <line num="45" type="method" name="_toArrayType" visibility="private" complexity="1" crap="2.00" count="0"/>
-        <line num="46" type="stmt" count="0"/>
-        <line num="52" type="method" name="getValue" visibility="public" complexity="1" crap="1" count="4"/>
-        <line num="53" type="stmt" count="4"/>
-        <metrics loc="56" ncloc="32" classes="1" methods="5" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="4" elements="11" coveredelements="7"/>
+        <line num="20" type="method" name="getInstance" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="21" type="stmt" count="6"/>
+        <line num="28" type="method" name="setValue" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="29" type="stmt" count="6"/>
+        <line num="31" type="stmt" count="6"/>
+        <line num="37" type="method" name="toArrayType" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="45" type="method" name="_toArrayType" visibility="private" complexity="1" crap="1" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="52" type="method" name="getValue" visibility="public" complexity="1" crap="1" count="5"/>
+        <line num="53" type="stmt" count="5"/>
+        <metrics loc="56" ncloc="32" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="11" coveredelements="11"/>
       </file>
     </package>
-    <metrics files="22" loc="761" ncloc="458" classes="12" methods="34" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="70" coveredstatements="39" elements="104" coveredelements="59"/>
+    <metrics files="22" loc="761" ncloc="458" classes="12" methods="34" coveredmethods="34" conditionals="0" coveredconditionals="0" statements="70" coveredstatements="70" elements="104" coveredelements="104"/>
   </project>
 </coverage>
