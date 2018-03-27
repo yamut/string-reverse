@@ -35,11 +35,9 @@ class PerformanceTest extends TestCase {
 		if ( self::LOCAL ) {
 			ini_set( 'max_execution_time', - 1 );
 			ini_set( 'memory_limit', '2048M' );
-			error_reporting( E_ALL ); // Error engine
-			//ini_set('display_errors', TRUE); // Error display
-			ini_set( 'log_errors', true ); // Error logging
-			ini_set( 'error_log', './errors.log' ); // Logging file
-			//ini_set('log_errors_max_len', 1024); // Logging file size
+			error_reporting( E_ALL );
+			ini_set( 'log_errors', true );
+			ini_set( 'error_log', './errors.log' );
 		}
 		parent::__construct( $name, $data, $dataName );
 	}
@@ -96,7 +94,6 @@ class PerformanceTest extends TestCase {
 		$average = 0;
 		foreach ( $times as $time ) {
 			$average += $time;
-			//echo "Time: $time" . PHP_EOL;
 		}
 		$average = $average / count( $times );
 		$this->printSomewhere( "Average time: " . $average . PHP_EOL );
@@ -139,7 +136,6 @@ class PerformanceTest extends TestCase {
 		$average = 0;
 		foreach ( $times as $time ) {
 			$average += $time;
-			//echo "Time: $time" . PHP_EOL;
 		}
 		$average = $average / count( $times );
 		$this->printSomewhere( "Average time: $average" . PHP_EOL );
