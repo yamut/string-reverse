@@ -68,7 +68,7 @@ class PerformanceTest extends TestCase {
 		if ( self::LOCAL ) {
 			$this->getFileHandle( 'test-length-performance.txt' );
 		}
-		$this->printToConsole( "BEGIN testLengthPerformance" . PHP_EOL );
+		$this->printSomewhere( "BEGIN testLengthPerformance" . PHP_EOL );
 		$times = [];
 		$counter = 0;
 		$memory = 0;
@@ -90,7 +90,7 @@ class PerformanceTest extends TestCase {
 				$memory = $mem;
 			}
 			$counter ++;
-			$this->printToConsole( "Time: " . ( $end - $start ) . PHP_EOL );
+			$this->printSomewhere( "Time: " . ( $end - $start ) . PHP_EOL );
 			flush();
 		}
 		$average = 0;
@@ -99,9 +99,9 @@ class PerformanceTest extends TestCase {
 			//echo "Time: $time" . PHP_EOL;
 		}
 		$average = $average / count( $times );
-		$this->printToConsole( "Average time: " . $average . PHP_EOL );
-		$this->printToConsole( "Max memory usage: " . ( $memory / 1024 / 1024 ) . "MB" . PHP_EOL );
-		$this->printToConsole( "END testLengthPerformance" . PHP_EOL . PHP_EOL );
+		$this->printSomewhere( "Average time: " . $average . PHP_EOL );
+		$this->printSomewhere( "Max memory usage: " . ( $memory / 1024 / 1024 ) . "MB" . PHP_EOL );
+		$this->printSomewhere( "END testLengthPerformance" . PHP_EOL . PHP_EOL );
 	}
 
 	/**
@@ -111,7 +111,7 @@ class PerformanceTest extends TestCase {
 		if ( self::LOCAL ) {
 			$this->getFileHandle( 'test-volume-performance.txt' );
 		}
-		$this->printToConsole( "BEGIN testHighVolume" . PHP_EOL );
+		$this->printSomewhere( "BEGIN testHighVolume" . PHP_EOL );
 		$counter = 0;
 		$times = [];
 		$memory = 0;
@@ -133,7 +133,7 @@ class PerformanceTest extends TestCase {
 				$memory = $mem;
 			}
 			$counter ++;
-			$this->printToConsole( "Time: " . ( $end - $start ) . PHP_EOL );
+			$this->printSomewhere( "Time: " . ( $end - $start ) . PHP_EOL );
 			flush();
 		}
 		$average = 0;
@@ -142,15 +142,15 @@ class PerformanceTest extends TestCase {
 			//echo "Time: $time" . PHP_EOL;
 		}
 		$average = $average / count( $times );
-		$this->printToConsole( "Average time: $average" . PHP_EOL );
-		$this->printToConsole( "Max memory usage: " . ( $memory / 1024 / 1024 ) . "MB" . PHP_EOL );
-		$this->printToConsole( "END testHighVolume" . PHP_EOL . PHP_EOL );
+		$this->printSomewhere( "Average time: $average" . PHP_EOL );
+		$this->printSomewhere( "Max memory usage: " . ( $memory / 1024 / 1024 ) . "MB" . PHP_EOL );
+		$this->printSomewhere( "END testHighVolume" . PHP_EOL . PHP_EOL );
 	}
 
 	/**
 	 * @param $message
 	 */
-	public function printToConsole( $message ): void {
+	public function printSomewhere( $message ): void {
 		//fwrite( STDERR, print_r( $message, true ) );
 		if ( self::LOCAL ) {
 			$this->writeLine( $message );
