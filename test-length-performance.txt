@@ -1,0 +1,6 @@
+BEGIN testLengthPerformance
+Time: 2.7279839515686
+Average time: 2.7279839515686
+Max memory usage: 156MB
+END testLengthPerformance
+
