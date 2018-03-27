@@ -5,6 +5,8 @@ php:
  - '7.2.2'
  - '7.2.3'
  - nightly
+before_install:
+ - phpenv config-add travis.php.ini
 before_script:
  - travis_retry composer self-update
  - travis_retry composer install --no-interaction --prefer-source --dev
