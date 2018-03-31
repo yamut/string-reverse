@@ -10,8 +10,6 @@
             <file>./tests/AlgorithmsDoesNothingTest.php</file>
             <file>./tests/AlgorithmTypeTest.php</file>
             <file>./tests/InvalidAlgorithmExceptionTest.php</file>
-            <file>./tests/PerformanceTest.php</file>
-            <file>./tests/PalindromeTest.php</file>
         </testsuite>
     </testsuites>
     <logging>
