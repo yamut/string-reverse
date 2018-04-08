@@ -19,9 +19,9 @@ This is an enterprise grade package for reversing strings. Enterprise software i
 ### Usage
 
 #### Code
-`Reverse::reverseString( 'string' );`
+`Reverse::reverseString( 'racecar' );`
 #### Output
-`gnirts`
+`racecar`
 
 
 
