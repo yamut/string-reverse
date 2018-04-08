@@ -9,7 +9,7 @@
 			"email": "dan@danmattern.com"
 		}
 	],
-	"require": {
+	"require-dev": {
 		"phpunit/phpunit": "7.0.2"
 	},
 	"autoload": {
