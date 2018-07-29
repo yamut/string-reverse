@@ -8,6 +8,7 @@ php:
  - '7.2.5'
  - '7.2.6'
  - '7.2.7'
+ - '7.2.8'
  - nightly
 before_install:
  - phpenv config-add travis.php.ini
