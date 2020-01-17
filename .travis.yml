@@ -1,21 +1,15 @@
 language: php
 php:
  - '7.2'
- - '7.2.1'
- - '7.2.2'
- - '7.2.3'
- - '7.2.4'
- - '7.2.5'
- - '7.2.6'
- - '7.2.7'
- - '7.2.8'
- - nightly
+ - '7.3'
+ - '7.4'
 before_install:
  - phpenv config-add travis.php.ini
 before_script:
  - travis_retry composer self-update
  - travis_retry composer install --no-interaction --prefer-source --dev
 script:
+ - pecl install pcov
  - vendor/bin/phpunit --coverage-clover=clover.xml
 after_success:
  - bash <(curl -s https://codecov.io/bash)
