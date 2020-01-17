@@ -24,6 +24,6 @@
 		}
 	},
 	"require": {
-		"ext-openssl": "^7.3"
+		"ext-openssl": "^7.2"
 	}
 }
