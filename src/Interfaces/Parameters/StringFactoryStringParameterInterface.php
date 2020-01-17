@@ -9,22 +9,22 @@ use Interview\Solutions\Strings\Reverse\Types\StringType;
  * Interface StringFactoryStringParameterInterface
  * @package Interview\Solutions\Strings\Reverse\Interfaces\Parameters
  */
-interface StringFactoryStringParameterInterface {
+interface StringFactoryStringParameterInterface
+{
 
-	/**
-	 * @return StringFactoryStringParameter
-	 */
-	public static function getInstance(): StringFactoryStringParameter;
+    /**
+     * @return StringFactoryStringParameter
+     */
+    public static function getInstance(): StringFactoryStringParameter;
 
-	/**
-	 * @param StringType $string
-	 * @return StringFactoryStringParameter
-	 */
-	public function setValue( StringType $string ): StringFactoryStringParameter;
+    /**
+     * @param StringType $string
+     * @return StringFactoryStringParameter
+     */
+    public function setValue(StringType $string): StringFactoryStringParameter;
 
-	/**
-	 * @return StringType
-	 */
-	public function getValue(): StringType;
-
+    /**
+     * @return StringType
+     */
+    public function getValue(): StringType;
 }

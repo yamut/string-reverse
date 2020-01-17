@@ -1,78 +1,92 @@
 <?php
 
+namespace Interview\Solutions\Strings\Reverse\Tests;
+
+use DateTime;
+use Interview\Solutions\Strings\Reverse\Exceptions\InvalidAlgorithmException;
 use Interview\Solutions\Strings\Reverse\Reverse;
 use PHPUnit\Framework\TestCase;
+use SplDoublyLinkedList;
 
-final class PalindromeTest extends TestCase {
+final class PalindromeTest extends TestCase
+{
 
-	/** @var string */
-	protected $palindrome;
+    /** @var string */
+    protected $palindrome;
 
-	public function setUp() {
-		parent::setUp();
+    public function setUp()
+    {
+        parent::setUp();
 
-		$this->palindrome = $this->palindromize( function() {
-			// empower algorithm robustness by rapidiously leveraging core functionality to architect large number generated in the wild
-			return ( new DateTime() )->diff( new DateTime('0001-01-01') )->format('%a');
-		});
-	}
+        $this->palindrome = $this->palindromize(
+            function () {
+                // empower algorithm robustness by rapidiously leveraging core functionality to architect large
+                // number generated in the wild
+                return (new DateTime())->diff(new DateTime('0001-01-01'))->format('%a');
+            }
+        );
+    }
 
-	/**
-	 * @throws \Interview\Solutions\Strings\Reverse\Exceptions\InvalidAlgorithmException
-	 */
-	public function testDoesPalindromeReverse() : void {
-		$this->assertEquals( $this->palindrome, Reverse::reverseString( $this->palindrome ) );
-	}
+    /**
+     * Palindromist helper that palindromically palindromizes a palindrome of n length
+     *
+     * @param callable $closure requested palindrome's length
+     *
+     * @return string
+     * @todo move to phpunit fixture
+     */
+    public function palindromize(callable $closure): string
+    {
+        $length = $closure();
+        $palindrome = '';
 
-	/**
-	 * @throws \Interview\Solutions\Strings\Reverse\Exceptions\InvalidAlgorithmException
-	 */
-	public function testDoesPalindromeReverseTheReversal() : void {
-		$reversed_reversal = Reverse::reverseString(
-			Reverse::reverseString(
-				$this->palindrome
-			)
-		);
+        $list = new SplDoublyLinkedList();
 
-		$this->assertEquals( $this->palindrome, $reversed_reversal );
-	}
+        for ($i = 0; $i < $length; $i++) {
+            $list->push($this->rand());
+        }
 
-	/**
-	 * Palindromist helper that palindromically palindromizes a palindrome of n length
-	 *
-	 * @param callable $closure requested palindrome's length
-	 *
-	 * @return string
-	 * @todo move to phpunit fixture
-	 */
-	public function palindromize(callable $closure) : string {
-		$length = $closure();
-		$palindrome = '';
+        for ($list->rewind(); $list->valid(); $list->next()) {
+            $palindrome .= $list->current();
+        }
 
-		$list = new SplDoublyLinkedList();
+        $list->setIteratorMode(SplDoublyLinkedList::IT_MODE_LIFO);
 
-		for($i = 0; $i < $length; $i++) {
-			$list->push( $this->rand() );
-		}
+        for ($list->rewind(); $list->valid(); $list->next()) {
+            $palindrome .= $list->current();
+        }
 
-		for( $list->rewind(); $list->valid(); $list->next() ) {
-			$palindrome .= $list->current();
-		}
+        return $palindrome;
+    }
 
-		$list->setIteratorMode( SplDoublyLinkedList::IT_MODE_LIFO );
+    public function rand()
+    {
+        $chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        $chars_array = str_split($chars);
+        $rand_key = array_rand($chars_array);
 
-		for( $list->rewind(); $list->valid(); $list->next() ) {
-			$palindrome .= $list->current();
-		}
+        return $chars_array[$rand_key];
+    }
 
-		return $palindrome;
-	}
+    /**
+     * @throws InvalidAlgorithmException
+     */
+    public function testDoesPalindromeReverse(): void
+    {
+        $this->assertEquals($this->palindrome, Reverse::reverseString($this->palindrome));
+    }
 
-	public function rand() {
-		$chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-		$chars_array = str_split( $chars );
-		$rand_key = array_rand( $chars_array );
+    /**
+     * @throws InvalidAlgorithmException
+     */
+    public function testDoesPalindromeReverseTheReversal(): void
+    {
+        $reversed_reversal = Reverse::reverseString(
+            Reverse::reverseString(
+                $this->palindrome
+            )
+        );
 
-		return $chars_array[ $rand_key ];
-	}
+        $this->assertEquals($this->palindrome, $reversed_reversal);
+    }
 }

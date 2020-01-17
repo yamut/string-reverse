@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: dan
@@ -11,22 +12,22 @@ namespace Interview\Solutions\Strings\Reverse\Interfaces\Factories;
 use Interview\Solutions\Strings\Reverse\Factories\AlgorithmFactory;
 use Interview\Solutions\Strings\Reverse\Types\AlgorithmType;
 
-interface AlgorithmFactoryInterface {
+interface AlgorithmFactoryInterface
+{
 
-	/**
-	 * @return AlgorithmFactory
-	 */
-	public static function getInstance(): AlgorithmFactory;
+    /**
+     * @return AlgorithmFactory
+     */
+    public static function getInstance(): AlgorithmFactory;
 
-	/**
-	 * @param AlgorithmType $algorithm
-	 * @return AlgorithmFactory
-	 */
-	public function setAlgorithm( AlgorithmType $algorithm = null ): AlgorithmFactory;
+    /**
+     * @param AlgorithmType $algorithm
+     * @return AlgorithmFactory
+     */
+    public function setAlgorithm(AlgorithmType $algorithm = null): AlgorithmFactory;
 
-	/**
-	 * @return AlgorithmType
-	 */
-	public function getAlgorithm(): AlgorithmType;
-
+    /**
+     * @return AlgorithmType
+     */
+    public function getAlgorithm(): AlgorithmType;
 }

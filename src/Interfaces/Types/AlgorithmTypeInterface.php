@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: dan
@@ -8,26 +9,25 @@
 
 namespace Interview\Solutions\Strings\Reverse\Interfaces\Types;
 
-
 use Interview\Solutions\Strings\Reverse\Types\AlgorithmType;
 use Interview\Solutions\Strings\Reverse\Types\StringType;
 
-interface AlgorithmTypeInterface {
+interface AlgorithmTypeInterface
+{
 
-	/**
-	 * @return AlgorithmType
-	 */
-	public static function getInstance(): AlgorithmType;
+    /**
+     * @return AlgorithmType
+     */
+    public static function getInstance(): AlgorithmType;
 
-	/**
-	 * @param StringType $algorithm
-	 * @return AlgorithmType
-	 */
-	public function setAlgorithm( StringType $algorithm ): AlgorithmType;
+    /**
+     * @param StringType $algorithm
+     * @return AlgorithmType
+     */
+    public function setAlgorithm(StringType $algorithm): AlgorithmType;
 
-	/**
-	 * @return StringType
-	 */
-	public function getAlgorithmName(): StringType;
-
+    /**
+     * @return StringType
+     */
+    public function getAlgorithmName(): StringType;
 }

@@ -8,50 +8,54 @@ use Interview\Solutions\Strings\Reverse\Interfaces\Types\StringTypeInterface;
  * Class StringType
  * @package Interview\Solutions\Strings\Reverse\Types
  */
-class StringType implements StringTypeInterface {
-	/**
-	 * @var string
-	 */
-	private $string;
+class StringType implements StringTypeInterface
+{
+    /**
+     * @var string
+     */
+    private $string;
 
-	/**
-	 * @return StringType
-	 */
-	public static function getInstance(): StringType {
-		return new StringType();
-	}
+    /**
+     * @return StringType
+     */
+    public static function getInstance(): StringType
+    {
+        return new StringType();
+    }
 
-	/**
-	 * @param string $string
-	 * @return StringType
-	 */
-	public function setValue( string $string ): StringType {
-		$this->string = $string;
+    /**
+     * @param string $string
+     * @return StringType
+     */
+    public function setValue(string $string): StringType
+    {
+        $this->string = $string;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @return ArrayType
-	 */
-	public function toArrayType(): ArrayType {
-		return ArrayType::getInstance()->setValue( $this->_toArrayType( $this->getValue() ) );
-	}
+    /**
+     * @return ArrayType
+     */
+    public function toArrayType(): ArrayType
+    {
+        return ArrayType::getInstance()->setValue($this->stringToArrayType($this->getValue()));
+    }
 
-	/**
-	 * @param $string
-	 * @return array
-	 */
-	private function _toArrayType( $string ): array {
-		return str_split( $string );
-	}
+    /**
+     * @param $string
+     * @return array
+     */
+    private function stringToArrayType($string): array
+    {
+        return str_split($string);
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getValue(): string {
-		return $this->string;
-	}
-
-
+    /**
+     * @return string
+     */
+    public function getValue(): string
+    {
+        return $this->string;
+    }
 }

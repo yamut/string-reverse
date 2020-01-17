@@ -9,12 +9,12 @@ use Interview\Solutions\Strings\Reverse\Types\StringType;
  * Interface StringReverseStringSolutionInterface
  * @package Interview\Solutions\Strings\Reverse\Interfaces\Solutions
  */
-interface StringReverseStringSolutionInterface {
+interface StringReverseStringSolutionInterface
+{
 
-	/**
-	 * @param StringType $input
-	 * @return StringReturner
-	 */
-	public function runReverseStringSolution( StringType $input ): ?StringReturner;
-
+    /**
+     * @param StringType $input
+     * @return StringReturner
+     */
+    public function runReverseStringSolution(StringType $input): ?StringReturner;
 }

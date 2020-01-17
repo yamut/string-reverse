@@ -9,22 +9,22 @@ use Interview\Solutions\Strings\Reverse\Types\StringType;
  * Interface StringReturnerInterface
  * @package Interview\Solutions\Strings\Reverse\Interfaces\Returners
  */
-interface StringReturnerInterface {
+interface StringReturnerInterface
+{
 
-	/**
-	 * @return StringReturner
-	 */
-	public static function getInstance(): StringReturner;
+    /**
+     * @return StringReturner
+     */
+    public static function getInstance(): StringReturner;
 
-	/**
-	 * @param StringType $string
-	 * @return StringReturner
-	 */
-	public function setValue( StringType $string ): StringReturner;
+    /**
+     * @param StringType $string
+     * @return StringReturner
+     */
+    public function setValue(StringType $string): StringReturner;
 
-	/**
-	 * @return StringType
-	 */
-	public function getValue(): StringType;
-
+    /**
+     * @return StringType
+     */
+    public function getValue(): StringType;
 }

@@ -10,6 +10,7 @@ before_script:
  - travis_retry composer install --no-interaction --prefer-source --dev
 script:
  - pecl install pcov
+ - vendor/bin/phpcs -n
  - vendor/bin/phpunit --coverage-clover=clover.xml
 after_success:
  - bash <(curl -s https://codecov.io/bash)
