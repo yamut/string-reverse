@@ -9,27 +9,27 @@ use Interview\Solutions\Strings\Reverse\Types\StringType;
  * Interface ArrayTypeInterface
  * @package Interview\Solutions\Strings\Reverse\Interfaces\Types
  */
-interface ArrayTypeInterface {
+interface ArrayTypeInterface
+{
 
-	/**
-	 * @return ArrayType
-	 */
-	public static function getInstance(): ArrayType;
+    /**
+     * @return ArrayType
+     */
+    public static function getInstance(): ArrayType;
 
-	/**
-	 * @param array $array
-	 * @return ArrayType
-	 */
-	public function setValue( array $array ): ArrayType;
+    /**
+     * @param array $array
+     * @return ArrayType
+     */
+    public function setValue(array $array): ArrayType;
 
-	/**
-	 * @return array
-	 */
-	public function getValue(): array;
+    /**
+     * @return array
+     */
+    public function getValue(): array;
 
-	/**
-	 * @return StringType
-	 */
-	public function toStringType(): StringType;
-
+    /**
+     * @return StringType
+     */
+    public function toStringType(): StringType;
 }
